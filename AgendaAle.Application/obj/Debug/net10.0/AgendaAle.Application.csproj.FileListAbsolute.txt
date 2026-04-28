@@ -1,0 +1,16 @@
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\bin\Debug\net10.0\AgendaAle.Application.deps.json
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\bin\Debug\net10.0\AgendaAle.Application.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\bin\Debug\net10.0\AgendaAle.Application.pdb
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\bin\Debug\net10.0\AgendaAle.Domain.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\bin\Debug\net10.0\AgendaAle.Domain.pdb
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAle.Application.csproj.AssemblyReference.cache
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAle.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAle.Application.AssemblyInfoInputs.cache
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAle.Application.AssemblyInfo.cs
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAle.Application.csproj.CoreCompileInputs.cache
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAle.Application.sourcelink.json
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAl.E91B8EC1.Up2Date
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAle.Application.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\refint\AgendaAle.Application.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\AgendaAle.Application.pdb
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Application\obj\Debug\net10.0\ref\AgendaAle.Application.dll

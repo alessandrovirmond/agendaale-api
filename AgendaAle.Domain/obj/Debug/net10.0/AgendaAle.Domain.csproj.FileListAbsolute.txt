@@ -1,0 +1,12 @@
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\bin\Debug\net10.0\AgendaAle.Domain.deps.json
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\bin\Debug\net10.0\AgendaAle.Domain.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\bin\Debug\net10.0\AgendaAle.Domain.pdb
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\AgendaAle.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\AgendaAle.Domain.AssemblyInfoInputs.cache
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\AgendaAle.Domain.AssemblyInfo.cs
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\AgendaAle.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\AgendaAle.Domain.sourcelink.json
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\AgendaAle.Domain.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\refint\AgendaAle.Domain.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\AgendaAle.Domain.pdb
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Domain\obj\Debug\net10.0\ref\AgendaAle.Domain.dll

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AgendaAle.AnalyticsWorker/AgendaAle.AnalyticsWorker.csproj" />
+  <Project Path="AgendaAle.Api/AgendaAle.Api.csproj" />
+  <Project Path="AgendaAle.Application/AgendaAle.Application.csproj" />
+  <Project Path="AgendaAle.Domain/AgendaAle.Domain.csproj" />
+  <Project Path="AgendaAle.Infrastructure/AgendaAle.Infrastructure.csproj" />
+</Solution>
