@@ -4,6 +4,9 @@ using AgendaAle.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using AgendaAle.Application.Services;
+using AgendaAle.Infrastructure.Auth;
+
 
 namespace AgendaAle.Infrastructure;
 
@@ -17,8 +20,10 @@ public static class DependencyInjection
             options.UseNpgsql(connectionString));
 
         services.AddScoped<IUserRepository, UserRepository>();
-        
+
         services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+
+        services.AddScoped<ITokenService, TokenService>();
 
         return services;
     }

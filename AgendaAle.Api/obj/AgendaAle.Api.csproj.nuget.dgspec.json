@@ -1213,6 +1213,9 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
+              "C:\\Users\\user\\repo\\pessoal\\agendaale\\agendaale-api\\AgendaAle.Application\\AgendaAle.Application.csproj": {
+                "projectPath": "C:\\Users\\user\\repo\\pessoal\\agendaale\\agendaale-api\\AgendaAle.Application\\AgendaAle.Application.csproj"
+              },
               "C:\\Users\\user\\repo\\pessoal\\agendaale\\agendaale-api\\AgendaAle.Domain\\AgendaAle.Domain.csproj": {
                 "projectPath": "C:\\Users\\user\\repo\\pessoal\\agendaale\\agendaale-api\\AgendaAle.Domain\\AgendaAle.Domain.csproj"
               }
@@ -1248,6 +1251,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.18.0, )"
             }
           },
           "imports": [

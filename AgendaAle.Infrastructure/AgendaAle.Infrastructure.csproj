@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AgendaAle.Domain\AgendaAle.Domain.csproj" />
+    <ProjectReference Include="..\AgendaAle.Application\AgendaAle.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -11,6 +12,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.18.0" />
   </ItemGroup>
 
   <PropertyGroup>

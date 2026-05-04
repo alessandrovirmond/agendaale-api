@@ -1,5 +1,6 @@
 using AgendaAle.Application.Commands.Auth;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AgendaAle.Api.Controllers;
@@ -18,8 +19,9 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginUserCommand command)
     {
-        var userId = await _mediator.Send(command);
-        
-        return Ok(new { UserId = userId }); 
+        var token = await _mediator.Send(command);
+
+        // Agora devolvemos o Token JWT!
+        return Ok(new { Token = token });
     }
 }

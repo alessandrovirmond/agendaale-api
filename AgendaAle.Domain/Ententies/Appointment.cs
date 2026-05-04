@@ -21,4 +21,11 @@ public Guid Id { get; private set; }
         Date = date;
         UserId = userId;
     }
+
+    public void Update(string title, string description, DateTime date)
+    {
+        Title = title;
+        Description = description;
+        Date = date;
+    }
 }

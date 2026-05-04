@@ -31,4 +31,19 @@ public class AppointmentRepository : IAppointmentRepository
             .OrderBy(a => a.Date)
             .ToListAsync(cancellationToken);
     }
+
+    public async Task<Appointment?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
+    {
+        return await _context.Appointments.FirstOrDefaultAsync(a => a.Id == id, cancellationToken);
+    }
+
+    public void Update(Appointment appointment)
+    {
+        _context.Appointments.Update(appointment);
+    }
+
+    public void Delete(Appointment appointment)
+    {
+        _context.Appointments.Remove(appointment);
+    }
 }

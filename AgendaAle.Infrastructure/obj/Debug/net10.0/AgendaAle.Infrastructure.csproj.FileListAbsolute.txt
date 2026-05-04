@@ -16,3 +16,5 @@ C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Infrastructure\obj\
 C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Infrastructure\obj\Debug\net10.0\AgendaAle.Infrastructure.pdb
 C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Infrastructure\obj\Debug\net10.0\AgendaAle.Infrastructure.genruntimeconfig.cache
 C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Infrastructure\obj\Debug\net10.0\ref\AgendaAle.Infrastructure.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Infrastructure\bin\Debug\net10.0\AgendaAle.Application.dll
+C:\Users\user\repo\pessoal\agendaale\agendaale-api\AgendaAle.Infrastructure\bin\Debug\net10.0\AgendaAle.Application.pdb
