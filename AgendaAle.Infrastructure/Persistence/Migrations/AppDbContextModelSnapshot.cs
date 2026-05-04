@@ -22,6 +22,35 @@ namespace AgendaAle.Infrastructure.Persistence.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("AgendaAle.Domain.Entities.Appointment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Appointments");
+                });
+
             modelBuilder.Entity("AgendaAle.Domain.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -33,8 +62,7 @@ namespace AgendaAle.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("character varying(150)");
+                        .HasColumnType("text");
 
                     b.Property<string>("ExternalAuthId")
                         .IsRequired()
@@ -50,6 +78,22 @@ namespace AgendaAle.Infrastructure.Persistence.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("AgendaAle.Domain.Entities.Appointment", b =>
+                {
+                    b.HasOne("AgendaAle.Domain.Entities.User", "User")
+                        .WithMany("Appointments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AgendaAle.Domain.Entities.User", b =>
+                {
+                    b.Navigation("Appointments");
                 });
 #pragma warning restore 612, 618
         }

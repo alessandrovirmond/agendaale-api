@@ -8,6 +8,7 @@ public class AppDbContext : DbContext
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     public DbSet<User> Users { get; set; }
+    public DbSet<Appointment> Appointments { get; set; } 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -15,12 +16,21 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Email).IsRequired().HasMaxLength(150);
-            
-            entity.HasIndex(e => e.Email).IsUnique(); 
-            
-            entity.Property(e => e.ExternalAuthId).IsRequired();
+            entity.HasKey(u => u.Id);
+            entity.HasIndex(u => u.Email).IsUnique();
+        });
+
+        modelBuilder.Entity<Appointment>(entity =>
+        {
+            entity.HasKey(a => a.Id);
+            entity.Property(a => a.Title).IsRequired().HasMaxLength(100);
+            entity.Property(a => a.Description).HasMaxLength(500);
+            entity.Property(a => a.Date).IsRequired();
+
+            entity.HasOne(a => a.User)            
+                  .WithMany(u => u.Appointments)
+                  .HasForeignKey(a => a.UserId) 
+                  .OnDelete(DeleteBehavior.Cascade); 
         });
     }
 }
