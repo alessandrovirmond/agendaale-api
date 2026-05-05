@@ -19,5 +19,6 @@
     <ProjectReference Include="..\AgendaAle.Application\AgendaAle.Application.csproj" />
     <ProjectReference Include="..\AgendaAle.Infrastructure\AgendaAle.Infrastructure.csproj" />
   </ItemGroup>
+  
 
 </Project>
