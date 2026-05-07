@@ -3,7 +3,9 @@ using AgendaAle.Application.Queries.Appointments;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 namespace AgendaAle.Api.Controllers;
 
 [Authorize]
@@ -18,13 +20,31 @@ public class AppointmentController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpPost]
-    public async Task<IActionResult> Create([FromBody] CreateAppointmentCommand command)
-    {
-        var appointmentId = await _mediator.Send(command);
 
-        return Created("", new { AppointmentId = appointmentId });
+
+[HttpPost]
+[Authorize]
+public async Task<IActionResult> Create([FromBody] CreateAppointmentCommand command)
+{
+    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+    var userEmailClaim = User.FindFirst(ClaimTypes.Email)?.Value;
+
+    if (Guid.TryParse(userIdClaim, out var userId))
+    {
+        command.UserId = userId;
     }
+    
+    command.UserEmail = userEmailClaim ?? string.Empty;
+
+    if (string.IsNullOrEmpty(command.UserEmail))
+    {
+        return BadRequest("O token do usuário não contém um e-mail válido.");
+    }
+
+    var id = await _mediator.Send(command);
+
+    return Ok(id);
+}
 
     [HttpGet("my-appointments")]
     public async Task<IActionResult> GetMyAppointments()

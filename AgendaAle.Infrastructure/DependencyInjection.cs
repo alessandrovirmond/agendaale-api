@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using AgendaAle.Application.Services;
 using AgendaAle.Infrastructure.Auth;
+using AgendaAle.Infrastructure.Messaging;
 
 
 namespace AgendaAle.Infrastructure;
@@ -25,6 +26,7 @@ public static class DependencyInjection
 
         services.AddScoped<ITokenService, TokenService>();
 
+        services.AddScoped<IMessageBus, RabbitMqMessageBus>();
         return services;
     }
 }

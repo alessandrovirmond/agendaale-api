@@ -4,4 +4,5 @@
   <Project Path="AgendaAle.Application/AgendaAle.Application.csproj" />
   <Project Path="AgendaAle.Domain/AgendaAle.Domain.csproj" />
   <Project Path="AgendaAle.Infrastructure/AgendaAle.Infrastructure.csproj" />
+  <Project Path="AgendaAle.Worker/AgendaAle.Worker.csproj" />
 </Solution>
