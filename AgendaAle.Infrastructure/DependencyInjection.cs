@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using AgendaAle.Application.Services;
 using AgendaAle.Infrastructure.Auth;
 using AgendaAle.Infrastructure.Messaging;
+using AgendaAle.Domain.Interfaces;
 
 
 namespace AgendaAle.Infrastructure;
@@ -19,12 +20,15 @@ public static class DependencyInjection
 
         services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(connectionString));
+            
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         services.AddScoped<IUserRepository, UserRepository>();
 
         services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 
         services.AddScoped<ITokenService, TokenService>();
+
 
         services.AddScoped<IMessageBus, RabbitMqMessageBus>();
         return services;

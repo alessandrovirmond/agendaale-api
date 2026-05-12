@@ -21,7 +21,6 @@ public class AuthController : ControllerBase
     {
         var token = await _mediator.Send(command);
 
-        // Agora devolvemos o Token JWT!
         return Ok(new { Token = token });
     }
 }

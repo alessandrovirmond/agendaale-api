@@ -11,7 +11,6 @@ public class User
 
     public ICollection<Appointment> Appointments { get; private set; } = new List<Appointment>();
 
-    protected User() { }
 
     public User(string email, string name, string externalAuthId)
     {

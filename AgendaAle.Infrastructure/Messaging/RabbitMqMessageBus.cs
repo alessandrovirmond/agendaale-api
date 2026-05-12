@@ -28,7 +28,6 @@ public class RabbitMqMessageBus : IMessageBus
         var json = JsonSerializer.Serialize(message);
         var body = Encoding.UTF8.GetBytes(json);
 
-        // 3. BasicPublishAsync
         await channel.BasicPublishAsync(exchange: string.Empty,
                                         routingKey: queue,
                                         body: body);

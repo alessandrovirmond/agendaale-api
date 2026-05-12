@@ -5,6 +5,9 @@ namespace AgendaAle.Domain.Repositories;
 public interface IUserRepository
 {
     Task<User?> GetByEmailAsync(string email, CancellationToken cancellationToken);
-    void Add(User user);
+
+    Task<User?> GetByExternalIdAsync(string externalId);
+
+    Task AddAsync(User user);
     Task SaveChangesAsync(CancellationToken cancellationToken);
 }

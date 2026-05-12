@@ -18,10 +18,17 @@ public class UserRepository : IUserRepository
         return await _context.Users.FirstOrDefaultAsync(u => u.Email == email, cancellationToken);
     }
 
-    public void Add(User user)
-    {
-        _context.Users.Add(user);
-    }
+    public async Task<User?> GetByExternalIdAsync(string externalId)
+{
+    return await _context.Users
+        .FirstOrDefaultAsync(u => u.ExternalAuthId == externalId);
+}
+
+public async Task AddAsync(User user)
+{
+    await _context.Users.AddAsync(user);
+}
+
 
     public async Task SaveChangesAsync(CancellationToken cancellationToken)
     {
