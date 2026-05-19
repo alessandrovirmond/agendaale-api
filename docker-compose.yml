@@ -19,6 +19,6 @@ services:
       RABBITMQ_DEFAULT_USER: admin
       RABBITMQ_DEFAULT_PASS: adminpassword
     ports:
-      - "5672:5672"   # Porta do broker
-      - "15672:15672" # Interface visual de gerenciamento
+      - "5672:5672"  
+      - "15672:15672"
     restart: unless-stopped
