@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgendaAle.AnalyticsWorker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33e1e13f9699f322744e16bf1793ea5ab3f9382f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+569f28dbe88d6cd049cccf980fdda1ffb3b58a5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgendaAle.AnalyticsWorker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgendaAle.AnalyticsWorker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
